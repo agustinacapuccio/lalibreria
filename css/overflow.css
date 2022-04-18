@@ -1,0 +1,115 @@
+/* Mi fuente, Montserrat, Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,400;1,500;1,800&family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+
+/* Guía de colores */
+:root {
+    --negro: #07020D;
+    --blanco: #FFFFFF;
+    --fondo: #F1E9DB;
+    --overlay: #5DB7DE;
+    --marron1: #A39B8B;
+    --marron2: #716A5C;
+    --transparente: rgba(0, 0, 0, 0);
+
+    --overflow: rgb(118, 109, 101);
+    --overflowTipo: #fff ;
+
+    --contenedor: 1400px;
+}
+
+* {
+    text-decoration: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/fondo_arkham.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.img {
+    max-width: 100%;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: clamp(1.6em, 3vw, 2.1em);
+}
+
+h2 {
+    font-weight: 600;
+    font-size: clamp(1.4em, 2vw, 1.8em);
+}
+
+section {
+    background-color: var(--overflow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1em;
+    border: 0.25em solid var(--negro);
+    border-radius: 2em;
+
+    box-shadow: 20px 20px 36px -10px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 20px 20px 36px -10px rgba(0,0,0,0.61);
+    -moz-box-shadow: 20px 20px 36px -10px rgba(0,0,0,0.61);
+}
+
+section div {
+    width: 45vw;
+    height: 55vh;
+
+    padding-right: 1em;
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    color: var(--overflowTipo);
+    text-align: center;
+}
+
+
+/* Catálogo Horizontal */
+.body {
+    background-image: none;
+    background-color: var(--fondo);
+}
+
+.contenedorCatalogo {
+    width: 80vw;
+    min-height: 600px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+    background-color: var(--overflow);
+
+    display: flex;
+    justify-content: flex-start;
+    gap: 2em;
+    text-align: center;
+}
+
+section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.h2 {
+    font-weight: 400;
+    font-size: 1.8em;
+    color: var(--overflowTipo);
+}
